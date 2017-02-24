@@ -1,5 +1,23 @@
-div {
-  border: solid 3px black;
-  margin:0;
-  padding:0;
-}
+body {
+  background-image: url(../images/textured_paper.png); }
+
+ul {
+  background-color: none; }
+
+.list-group-item {
+  padding-left: 0;
+  padding-top: 5px;
+  border: none;
+  background: none; }
+
+.col-md-4 {
+  border-right: dotted 1px black; }
+
+.col-md-offset-4 h4 {
+  padding-left: 10px; }
+.col-md-offset-4 p {
+  padding-left: 10px; }
+.col-md-offset-4 li:nth-child(1) {
+  padding: 10px; }
+
+/*# sourceMappingURL=main.css.map */
