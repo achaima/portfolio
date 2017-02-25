@@ -1,23 +1,60 @@
 body {
   background-image: url(../images/textured_paper.png); }
 
+section {
+  padding-top: 10px; }
+
 ul {
   background-color: none; }
 
-.list-group-item {
-  padding-left: 0;
-  padding-top: 5px;
+a {
+  color: green; }
+
+.navbar-default {
+  margin: 0 auto; }
+
+.portfolio {
+  text-align: center;
+  margin-bottom: 400px; }
+
+.btn-default {
   border: none;
+  height: 50px;
+  width: 80px;
   background: none; }
 
-.col-md-4 {
-  border-right: dotted 1px black; }
+.jumbotron {
+  background-image: url(../images/back.jpeg);
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  background-repeat: no-repeat;
+  height: 590px;
+  margin: 0 auto;
+  align-items: center;
+  text-align: center;
+  font-family: Century Gothic, sans-serif;
+  margin-bottom: 50px; }
+
+.img-thumbnail {
+  background: none;
+  height: 80px;
+  width: 70px;
+  align-items: center; }
+
+button {
+  display: inline-block;
+  border-radius: 20px; }
+
+.list-group-item {
+  padding: 0;
+  border: none;
+  background: none; }
 
 .col-md-offset-4 h4 {
   padding-left: 10px; }
 .col-md-offset-4 p {
   padding-left: 10px; }
-.col-md-offset-4 li:nth-child(1) {
+.col-md-offset-4 li {
   padding: 10px; }
 
 /*# sourceMappingURL=main.css.map */
