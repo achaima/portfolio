@@ -1,60 +1,51 @@
 body {
-  background-image: url(../images/textured_paper.png); }
+  background-image: url(../images/back.jpeg); }
+
+#contain {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-top: 20px;
+  border-radius: 20px;
+  font-family: sans-serif; }
 
 section {
-  padding-top: 10px; }
-
-ul {
-  background-color: none; }
-
-a {
-  color: green; }
+  padding-top: 5px; }
 
 .navbar-default {
   margin: 0 auto; }
-
-.portfolio {
-  text-align: center;
-  margin-bottom: 400px; }
-
-.btn-default {
-  border: none;
-  height: 50px;
-  width: 80px;
-  background: none; }
 
 .jumbotron {
   background-image: url(../images/back.jpeg);
   border-top: 5px solid black;
   border-bottom: 5px solid black;
-  background-repeat: no-repeat;
   height: 590px;
   margin: 0 auto;
-  align-items: center;
   text-align: center;
-  font-family: Century Gothic, sans-serif;
-  margin-bottom: 50px; }
+  font-family: Century Gothic, sans-serif; }
 
 .img-thumbnail {
   background: none;
   height: 80px;
-  width: 70px;
+  width: 80px;
   align-items: center; }
-
-button {
-  display: inline-block;
-  border-radius: 20px; }
 
 .list-group-item {
   padding: 0;
-  border: none;
-  background: none; }
+  background: none;
+  border: none; }
 
-.col-md-offset-4 h4 {
-  padding-left: 10px; }
-.col-md-offset-4 p {
-  padding-left: 10px; }
-.col-md-offset-4 li {
-  padding: 10px; }
+.education h5 {
+  margin-top: 18px; }
+.education p {
+  color: gray;
+  font-size: 12px; }
+
+.experience button {
+  display: inline;
+  border-radius: 20px; }
+
+.skills p {
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */

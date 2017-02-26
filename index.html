@@ -1,63 +1,68 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>My CV</title>
   </head>
 
-  <body>
 
+<body>
 
-<div class="image">
-
-<!-- NAVBAR -->
-<nav class = "navbar navbar-default">
-  <div class="container container-fluid">
-
-    <div class="navbar-header">
-      <a href="#" class="navbar-brand">Hey!</a>
-    </div>
-
-    <div>
-    <ul class="nav navbar-nav">
-      <div class="btn-group" role="group" aria-label="...">
-  <button type="button" class="btn btn-default"><a href="#">Home</a></button>
-  <button type="button" class="btn btn-default"><a href="#">Portfolio</a></button>
-  <button type="button" class="btn btn-default"><a href="#">Contact</a></button>
-</div>
-    </ul>
-  </div>
-
-  </div>
-</nav>
-
-
-
+<!-- HOMEPAGE DISPLAY-->
 <div class="jumbotron">
     <h1>Asma Chaima</h1>
     <h2>Junior Web Developer</h2>
+  <div class="col-xs-2 col-xs-offset-5">
+      <div class="row">
+      <img src="images/prof.png" class="img-responsive" width="350px" height="300px">
+  </div>
+</div>
+
 </div>
 
 
-<!-- START OF CONTAINER -->
-<!-- container starts here so its all centred -->
+<!-- NAVBAR -->
+<nav class="navbar navbar-default">
+  <div class="container container-fluid">
+    <div class="row">
+  <!-- took out navbar header -->
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data target="#mainnavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+   </button>
+
+<div class = "collapse navbar-collapse" id="mainnavbar">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Resume</a></li>
+  </ul>
+  </div>
+    </div>
+</div>
+</nav>
 
 
-
-  <div class="container container">
-
+<!-- START OF CENTRED CONTAINER -->
+<div class="container container" id="contain">
+<div class="col-xs-12">
 <!-- CV  -->
-<!-- LEFT -->
-<div class="col-md-4">
+<!-- LEFT-SIDE -->
+<div class="col-xs-5">
+  <div class="row">
+
 
   <section class="contact">
     <h4>CONTACT</h4>
-    <p><span class="glyphicon glyphicon-phone"> 07893756475</span></p>
-    <p><span class="glyphicon glyphicon-envelope"> assmachaima@spartaglobal.co</span></p>
-    <p><span class="glyphicon glyphicon-user"> <a href="https://www.linkedin.com/in/asma-chaima-88968960/"> LinkedIn </a></span></p>
+    <p>07893756475</p>
+    <p>asmachaima@spartaglobal.co</p>
+    <p><a href="https://www.linkedin.com/in/asma-chaima-88968960/">LinkedIn</a></p>
   </section>
 
  <section class="education">
@@ -68,125 +73,105 @@
             <h5>LLB Law (2.1)</h5>
             <p>University of Hertfordshire | 2011-2014 </p>
         </li>
-
         <li class="list-group-item">
             <h5>History (B), Politics (B), Sociology (B)</h5>
             <p>Sir George Monoux College | 2009-2011</p>
         </li>
 
-        <li class="list-group-item">
+        <li class="list-group-item" id="gcse">
             <h5>11 GCSE'S A*-B </h5>
             <p>Park View Academy | 2004-2009 </p>
         </li>
       </ol>
 </section>
 
-<section class="volunteering experiences">
-  <h4>VOLUNTEERING</h4>
-  <p>Trainer at Code First: Girls</p>
-  <p><a href="https://youtu.be/cCXsNsDkG7I">Restless Development, Zimbabwe</a></p>
-  <p>Citizen Advice Bureau</p>
-  <p>Mount Snowden climb</p>
-</section>
-
 <section class = "Interests">
   <h4>INTERESTS</h4>
-    <ul class="list-inline" id="int">
-      <li class="list-group-item"><img src="images/writing2.png" class="img-thumbnail"/><p>Writing</p></li>
-      <li class="list-group-item"><img src="images/reading2.png" class="img-thumbnail"/><p>Reading</p></li>
-      <li class="list-group-item"><img src="images/travelling.png" class="img-thumbnail"/><p>Travelling</p></li>
+    <ul class="list-inline">
+      <li class="list-group-item"><img src="images/writing2.png" class="img-thumbnail img-responsive"/><p>Writing</p></li>
+      <li class="list-group-item"><img src="images/reading2.png" class="img-thumbnail img-responsive"/><p>Reading</p></li>
+      <li class="list-group-item"><img src="images/travelling.png" class="img-thumbnail img-responsive"/><p>Travelling</p></li>
     </ul>
 </section>
 
-
-<section class="reference">
-  <h4>REFERENCE</h4>
-   <p>References available at request</p>
-   <!--Maybe just provide a reference. Matt and Steve's email-->
+<section class="volunteering">
+  <h4>VOLUNTEERING</h4>
+    <p>Trainer at Code First: Girls</p>
+    <p><a href="https://youtu.be/cCXsNsDkG7I">Restless Development, Zimbabwe</a></p>
+    <p>Citizen Advice Bureau</p>
+    <p>Mount Snowden climb, Mind</p>
 </section>
 
+
+ </div>
 </div>
 
 
-
-
 <!-- RIGHT -->
+<div class="col-xs-6">
+  <div class="row">
 
-<div class="col-md-offset-4">
-
-<section class="profile">
-  <!-- THIS IS PLAGARISED SO OBVIOUSLY CHANGE IT -->
-  <h4>PROFILE</h4>
-  <p>It was almost 7 years ago when i realised what I wanted to do in the future, it was something that I truly enjoyed doing and would spend extra hours on it.
-    The world of technology is always growing and being part of it allowed me to evolve and learn progressively by creating services that are useful to people.
-    I delved into learning about animation, game development and web development which led me to build ideas into products of passion.
-    </p>
-</section>
+  <section class="profile">
+    <h4>PROFILE</h4>
+    <!-- THIS IS PLAGARISED SO CHANGE IT -->
+      <p>It was almost 7 years ago when i realised what I wanted to do in the future, it was something that I truly enjoyed doing and would spend extra hours on it.
+      The world of technology is always growing and being part of it allowed me to evolve and learn progressively by creating services that are useful to people.
+      Given that the last parameter is the "alpha" parameter, if you set it to 0 it will mean "completely transparent", and the first three parameters
+      </p>
+  </section>
 
 
 <section class="experience">
-<h4>EXPERIENCE</h4>
-<!-- Remember to change all the headings out of P-->
+  <h4>EXPERIENCE</h4>
 
-<ol class="list-inline">
-  <li class="list-group-item"><h5>Junior Web Development Consultant | Sparta Global
-    <button data-toggle="collapse" data-target="#demo">+</button></h5>
-    <div id="demo" class="collapse"> bla bla </div>
-    </li>
+  <ol class="list-inline">
+      <li class="list-group-item"><h5>Junior Web Development Consultant | Sparta Global
+          <button data-toggle="collapse" data-target="#demo">+</button></h5>
+              <div id="demo" class="collapse"> bla bla </div>
+      </li>
 
 
-  <li class="list-group-item"><h5>Junior Business Analyst/Software tester | Lloyd's banking Group
-    <button data-toggle="collapse" data-target="#temp">+</button></h5>
+      <li class="list-group-item"><h5>Junior Business Analyst/Software Tester | Lloyd's banking Group
+          <button data-toggle="collapse" data-target="#temp">+</button></h5>
+              <div id="temp" class="collapse">
 
-    <div id="temp" class="collapse">
-      <p><strong>Project:</strong> Basel III Liquidity Regulatory project</p>
-      <p><strong>Project description:</strong> This is Basel III Regulatory project which enables Lloyds Banking Group to meet the liquidity regulatory reporting requirements from EBA (European Banking Authority).
-      The data from different source systems are consolidated and transformed to derive the divisional liquidity.</p>
-
-      <p>Technology: HP ALM, MSSQL 2008, MS VISIO and AXIS (change management tool)</p>
-
-      <ul class="list-group">
-        <li class="list-group-item">Involved in Test planning, Test execution and Defect management</li>
-        <li class="list-group-item">Raising and managing change request in change management tool (AXIS)</li>
-        <li class="list-group-item">Creation of overarching technical solution documents.</li>
-        <li class="list-group-item">Creation of a number of user guides for different processes.</li>
-        <li class="list-group-item">Creating and monitoring project spreadsheets</li>
-    </ul>
-    </div>
-    </li>
-
-</ol>
+                <p><strong>Project:</strong> Basel III Liquidity Regulatory project</p>
+                <p><strong>Technology:</strong> HP ALM, MSSQL 2008, MS VISIO and AXIS (change management tool)</p>
+                  <ul class="list-group">
+                      <li class="list-group-item">Involved in Test planning, Test execution and Defect management</li>
+                      <li class="list-group-item">Raising and managing change request in change management tool (AXIS)</li>
+                      <li class="list-group-item">Creation of overarching technical solution documents.</li>
+                      <li class="list-group-item">Creation of a number of user guides for different processes.</li>
+                      <li class="list-group-item">Creating and monitoring project spreadsheets</li>
+                  </ul>
+              </div>
+      </li>
+   </ol>
 </section>
 
 
-<section class = "Skills">
+<section class = "skills">
   <h4>SKILLS</h4>
     <ul class="list-inline">
-      <li class="list-group-item"><img src="images/HTML5_Logo.png" class="img-thumbnail"/><p>HTML5</p></li>
-      <li class="list-group-item"><img src="images/css3.png" class="img-thumbnail"/><p>CSS3</p></li>
-      <li class="list-group-item"><img src="images/sass.png" class="img-thumbnail"/><p>SASS</p></li>
-      <li class="list-group-item"><img src="images/gulp.png" class="img-thumbnail"/><p>GULP</p></li>
-      <li class="list-group-item"><img src="images/bootstrap.png" class="img-thumbnail"/><p>BOOTSTRAP</p></li>
-<li class="list-group-item"><img src="images/JS.png" class="img-thumbnail"/><p>JAVASCRIPT</p></li>
-<li class="list-group-item"><img src="images/hadoop.png" class="img-thumbnail"/><p>HADOOP</p></li>
-</ul>
-
-
-      <div class="lineone">
-   <ul class="list-inline">
+      <li class="list-group-item"><img src="images/HTML5_Logo.png" class="img-thumbnail img-responsive"/><p>HTML5</p></li>
+      <li class="list-group-item"><img src="images/css3.png" class="img-thumbnail img-responsive"/><p>CSS3</p></li>
+      <li class="list-group-item"><img src="images/sass.png" class="img-thumbnail img-responsive"/><p>SASS</p></li>
+      <li class="list-group-item"><img src="images/gulp.png" class="img-thumbnail img-responsive"/><p>GULP</p></li>
+      <li class="list-group-item"><img src="images/bootstrap.png" class="img-thumbnail img-responsive"/><p>BOOTSTRAP</p></li>
+      <li class="list-group-item"><img src="images/JS.png" class="img-thumbnail img-responsive"/><p>JAVASCRIPT</p></li>
       <li class="list-group-item"><img src="images/React-JS.png" class="img-thumbnail"/><p>React.JS</p></li>
       <li class="list-group-item"><img src="images/SQL.png" class="img-thumbnail"/><p>SQL</p></li>
       <li class="list-group-item"><img src="images/agile.png" class="img-thumbnail"/><p>AGILE</p></li>
       <li class="list-group-item"><img src="images/microsoft.png" class="img-thumbnail"/><p>MICROSOFT</p></li>
-<li class="list-group-item"><img src="images/JS.png" class="img-thumbnail"/><p>NODE.JS</p></li>
-<li class="list-group-item"><img src="images/mongodb.png" class="img-thumbnail"/><p>MongoDB</p></li>
+      <li class="list-group-item"><img src="images/JS.png" class="img-thumbnail"/><p>NODE.JS</p></li>
+      <li class="list-group-item"><img src="images/mongodb.png" class="img-thumbnail"/><p>MongoDB</p></li>
   </ul>
-</div>
 </section>
 
 
 
   </div>
+</div>
 
 <!-- PORTFOLIO -->
 
@@ -195,91 +180,3 @@
 
 </body>
  </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <section id = "right">
-<div class="col-md-6">
-  <h1>Asma Chaima</h1>
-
-
-  <h2>PROFILE</h2>
-
-
-<section id="employmentHistory">
-  <h2>EMPLOYMENT HISTORY</h2>
-
-
-<ol>
- <li>
-
-      <h5>Junior Business Analyst/Software tester | Lloyd's banking Group</h5>
-        <h6>June 2016 – Dec 2016</h6>
-        <p>Project: Basel III Liquidity Regulatory project</p>
-        <p>Project description:This is Basel III Regulatory project which enables Lloyds Banking Group to meet the liquidity regulatory reporting requirements from EBA (European Banking Authority).The data from different source systems are consolidated and transformed to derive the divisional liquidity.</p>
-
-
-        <p>Technology: HP ALM, MSSQL 2008, MS VISIO and AXIS (change management tool)</p>
-      <ul>
-          <li>Involved in Test planning, Test execution and Defect management</li>
-          <li>Raising and managing change request in change management tool (AXIS)</li>
-          <li>Creation of overarching technical solution documents.</li>
-          <li>Creation of a number of user guides for different processes.</li>
-          <li>Creating and monitoring project spreadsheets</li>
-      </ul>
- </li>
-
- <li>
-  <h5>HR Support ODEON</h5>
-    <h6>Feb 2016 – June 2016 </h6>
-    <ul>
-        <li>Added new employees in the system, organised starter packs.</li>
-        <li>Recorded holidays, absences, leaves (maternity, paternity, bereavement), lateness</li>
-        <li>Produced reports to management such as cost report or roster report</li>
-    </ul>
- </li>
-
-</ol>
-</section>
-
-</div>
-</section>
-
-
-
-
-
-
-
-
-
-</div>
-
-  </body>
--->
