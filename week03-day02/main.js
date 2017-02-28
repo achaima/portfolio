@@ -47,3 +47,33 @@ p.firstName = 'Fred',
 p.lastName = 'Flinstone';
 
 //Can add a new object like this but Matt wouldn't recommend it causes its less cleaner
+
+//FUNCTION
+
+console.log ('---Functions');
+
+function createPerson (firstName, lastName, email, age) {
+  var newPerson = {
+    firstName: firstName,
+    lastName: lastName,
+    email: email,
+    age: age
+  };
+
+  return newPerson;
+}
+//Can only return it within the bracket it cannot go outside the newPerson curly brackets. That is called scope
+
+
+var harald = createPerson('Harald','Kumar', 'h.kumar@example.com',15);
+console.log ('newPerson:', harald);
+
+function isOldEnough (age) {
+  return (age >= 18);
+}
+
+if (isOldEnough(harald.age)) {
+  console.log ('come in');
+} else {
+  console.log ('come back when you\'re older');
+};
